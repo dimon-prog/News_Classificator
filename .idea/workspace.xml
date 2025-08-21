@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1406a6-2b1a-4804-a10d-c3facf902954" name="Changes" comment="">
+    <list default="true" id="bb1406a6-2b1a-4804-a10d-c3facf902954" name="Changes" comment="model is running great">
+      <change afterPath="$PROJECT_DIR$/backend/API/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/API/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/API/test.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backend/model/data/FakeNewsNet.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/backend/model/data/fake_or_real_news.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/News_Classificator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/News_Classificator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/model/model.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/model/vectorizer.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/model/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/model/model_sklearn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/model/model_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/model/model_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/model/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/model/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/model/model_test.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -55,23 +59,54 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python.main.executor": "Run",
     "Python.model.executor": "Run",
     "Python.model_sklearn.executor": "Run",
     "Python.model_test.executor": "Run",
+    "Python.test (1).executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/skreb/PycharmProjects/News_Classificator/backend/model/data",
+    "last_opened_file_path": "C:/Users/skreb/PycharmProjects/News_Classificator/frontend",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\skreb\PycharmProjects\News_Classificator\frontend" />
+      <recent name="C:\Users\skreb\PycharmProjects\News_Classificator\frontend\js" />
+      <recent name="C:\Users\skreb\PycharmProjects\News_Classificator\frontend\css" />
+      <recent name="C:\Users\skreb\PycharmProjects\News_Classificator\backend\model\model_self + vectorizer" />
       <recent name="C:\Users\skreb\PycharmProjects\News_Classificator\backend\model\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\skreb\PycharmProjects\News_Classificator\backend\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="News_Classificator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/API" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/API/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="News_Classificator" />
       <option name="ENV_FILES" value="" />
@@ -116,7 +151,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="model_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="News_Classificator" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,11 +160,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/model" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/API" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/model/model_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/API/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,10 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.model" />
         <item itemvalue="Python.model_sklearn" />
-        <item itemvalue="Python.model_test" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +221,15 @@
       <option name="presentableId" value="Default" />
       <updated>1754479675887</updated>
     </task>
+    <task id="LOCAL-00001" summary="model is running great">
+      <option name="closed" value="true" />
+      <created>1755797899173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755797899174</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,5 +242,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="model is running great" />
+    <option name="LAST_COMMIT_MESSAGE" value="model is running great" />
   </component>
 </project>
