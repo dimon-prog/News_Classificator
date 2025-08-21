@@ -1,12 +1,8 @@
-import pandas as pd
-import os
-#print(os.getcwd())
-dataset = pd.read_csv("data/WELFake_Dataset.csv")
-#print(dataset["title"])
-print(dataset.columns)
-print(dataset["title"][0])
-print(dataset["label"][0])
-#X = dataset["title"].tolist()
-#labels = dataset["label"].values.astype(float)
-#labels = labels.astype(float)
-#print(labels)
+import joblib
+
+vectorizer = joblib.load("vectorizer.pkl")
+ensemble = joblib.load("model.pkl")
+test = ["The iPhone 17 is expected to be released in September 2025."]
+X_test_2 = vectorizer.transform(test)
+print(ensemble.predict_proba(X_test_2))
+print("True" if ensemble.predict_proba(X_test_2)[0][0] < 0.5 else "False")

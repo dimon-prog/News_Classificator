@@ -3,10 +3,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import csv
-import sys
 
-csv.field_size_limit(sys.maxsize)
-dataset = pd.read_csv("WELFake_Dataset.csv", engine="python")
+csv.field_size_limit(10**7)
+dataset = pd.read_csv("data/WELFake_Dataset.csv", engine="python")
 dataset = dataset.dropna(subset=["title"])
 
 test = ["BREAKING: PUTIN'S SUITCASE FOUND IN IT...!!!"]
@@ -45,11 +44,10 @@ class Model:
         plt.ylabel("Loss")
         plt.show()
 
-
     def prediction(self, X):
         prediction = X.dot(self.w) + self.b
         return sigmoid(prediction)[0]
-        #return "Fake" if sigmoid(prediction)[0] <= 0.5 else "True"
+        # return "Fake" if sigmoid(prediction)[0] <= 0.5 else "True"
 
 
 model_test = Model(X.shape[1])
